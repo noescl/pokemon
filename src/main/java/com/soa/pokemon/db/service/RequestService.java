@@ -20,8 +20,8 @@ public class RequestService {
         return requestRepository.findAll();
     }
     public void insertRequest(Request request){
-        LOG.info("ENTRO AL SAVE Request"+request.toString());
+        LOG.info("IN Save Request :: "+request.toString());
         this.requestRepository.save(request);
-        LOG.info("Save Request"+request.toString());
+        LOG.info("OUT Save Request :: "+request.toString());
     }
 }
