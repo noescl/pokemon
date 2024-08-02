@@ -38,3 +38,8 @@ curl --header "content-type: text/xml" -d @pikachu.xml http:/localhost:8080/ws >
 ```
 curl --header "content-type: text/xml" -d @ditto.xml http:/localhost:8080/ws > output.xml
 ```
+
+6.- Base de datos creada
+```
+pokeapidb.mv.db
+```
