@@ -37,7 +37,7 @@ public class WebServiceInterceptor implements EndpointInterceptor {
 
     @Override
     public boolean handleRequest(MessageContext messageContext, Object o) throws Exception {
-        LOG.info("ENTRO AL handleRequest. . .");
+        LOG.info("ISIDE handleRequest. . .");
         Date date = new Date();
         Request request = new Request();
         request.setMethod(messageContext.getRequest().toString().split("}")[1]);

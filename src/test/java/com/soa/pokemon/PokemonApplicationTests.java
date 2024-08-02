@@ -26,5 +26,3 @@ class PokemonApplicationTests {
 		return Optional.of(new Request(new Long(1),"127.0.0.0", date,"GetIdRequest"));
 	}
 }
-//verify(requestRepository).save(any(Request.class));
-//verify(requestRepository.save(crearRequest()));

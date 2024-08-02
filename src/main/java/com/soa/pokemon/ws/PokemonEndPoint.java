@@ -80,7 +80,7 @@ public class PokemonEndPoint {
                 pokemon.getAbilities().add(a);
             }
             getPokemonResponse.setPokemon(pokemon);
-            LOG.info("RESPONSE " + pokemonResponse);
+            LOG.info("RESPONSE :: " + pokemonResponse);
 
             return getPokemonResponse;
         }
@@ -88,7 +88,7 @@ public class PokemonEndPoint {
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "GetAbilitiesRequest")
     @ResponsePayload
     public GetPokemonResponse getAbilities(@RequestPayload GetAbilitiesRequest request) {
-        LOG.info("GetAbilitiesRequest::" + "/" + request.getName());
+        LOG.info("GetAbilitiesRequest :: " + "/" + request.getName());
         GetPokemonResponse getPokemonResponse = new GetPokemonResponse();
         PokemonResponse pokemonResponse = getPokemon(request.getName());
 
@@ -108,7 +108,7 @@ public class PokemonEndPoint {
             }
             GetPokemonResponse response = new GetPokemonResponse();
             response.setPokemon(pokemon);
-            LOG.info("RESPONSE WS: " + pokemonResponse);
+            LOG.info("RESPONSE WS :: " + pokemonResponse);
             return response;
         }
     }
@@ -127,7 +127,7 @@ public class PokemonEndPoint {
             pokemon.setBaseExperience(BigInteger.valueOf(pokemonResponse.getBase_experience()));
             GetPokemonResponse response = new GetPokemonResponse();
             response.setPokemon(pokemon);
-            LOG.info("RESPONSE WS: " + pokemonResponse);
+            LOG.info("RESPONSE WS :: " + pokemonResponse);
             return response;
         }
     }
@@ -162,7 +162,7 @@ public class PokemonEndPoint {
             }
             GetPokemonResponse response = new GetPokemonResponse();
             response.setPokemon(pokemon);
-            LOG.info("RESPONSE WS: " + pokemonResponse);
+            LOG.info("RESPONSE WS :: " + pokemonResponse);
             return response;
         }
     }

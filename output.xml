@@ -1,0 +1,1 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><ns2:GetPokemonResponse xmlns:ns2="http://com.pokemon/api"><ns2:Pokemon><ns2:id>132</ns2:id></ns2:Pokemon></ns2:GetPokemonResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
