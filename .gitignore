@@ -1,6 +1,7 @@
 HELP.md
 pokeapidb.mv.db
 pokeapidb.trace.db
+output.xml
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
